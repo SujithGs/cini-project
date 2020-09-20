@@ -1,0 +1,17 @@
+<div class="main-container flex">
+  <div class="landing-container">
+    <div class="landing--item">
+      <mat-card>
+        <mat-card-header style="justify-content: center !important">
+          <mat-card-title>Welcome !!!
+          </mat-card-title>
+        </mat-card-header>
+
+      </mat-card>
+    </div>
+    <div *ngIf="!loading">
+      <div *ngFor="let item of list" style="display: inline-block">
+        <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{item.poster_path}}">
+      </div>
+    </div>
+  </div>
